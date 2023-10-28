@@ -1,3 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from . import clientes
+from . import articulo
+from . import producto
+from . import tipo_producto

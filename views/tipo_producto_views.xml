@@ -1,0 +1,27 @@
+<odoo>
+  <record id="upobarber_tipo_producto_form_view" model="ir.ui.view">
+    <field name="name">upobarber.tipo_producto.form</field>
+    <field name="model">upobarber.tipo_producto</field>
+    <field name="arch" type="xml">
+      <form string="Tipo Producto">
+        <sheet layout="auto">
+          <group>
+            <field name="tipo_producto_id" />
+            <field name="nombre" />
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="upobarber_tipo_producto_tree_view" model="ir.ui.view">
+    <field name="name">upobarber.tipo_producto.tree</field>
+    <field name="model">upobarber.tipo_producto</field>
+    <field name="arch" type="xml">
+      <tree string="tree_string">
+        <field name="tipo_producto_id" />
+        <field name="nombre" />
+      </tree>
+    </field>
+  </record>
+</odoo>
