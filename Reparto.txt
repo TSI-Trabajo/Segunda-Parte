@@ -1,0 +1,5 @@
+Tomasso -> Reseña, Servicio, Tipo Servicio
+Jose Antonio -> Pago, Metodo Pago, Compra
+José Luis -> Articulo, Producto, Tipo Producto
+Jose Lopez -> Horario, Empleado, Cita/2
+Carlos -> Cliente, Reserva, Cita/2
