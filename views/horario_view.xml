@@ -1,0 +1,29 @@
+<odoo>
+  <record id="upobarber_horario_form_view" model="ir.ui.view">
+    <field name="name">upobarber.horario.form</field>
+    <field name="model">upobarber.horario</field>
+    <field name="arch" type="xml">
+      <form string="Horario">
+        <sheet layout="auto">
+          <group>
+            <field name="horaFin" />
+            <field name="id_Cita" widget="one2many" />
+            <field name="dni_Empleado" widget="one2many" />
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="upobarber_horario_tree_view" model="ir.ui.view">
+    <field name="name">upobarber.horario.tree</field>
+    <field name="model">upobarber.horario</field>
+    <field name="arch" type="xml">
+      <tree string="tree_string">
+        <field name="horaFin" />
+        <field name="id_Cita" widget="one2many" />
+        <field name="dni_Empleado" widget="one2many" />
+      </tree>
+    </field>
+  </record>
+</odoo>
