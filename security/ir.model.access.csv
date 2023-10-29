@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_upo_barber_upo_barber,upo_barber.upo_barber,model_upo_barber_upo_barber,base.group_user,1,1,1,1
