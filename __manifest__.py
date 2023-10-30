@@ -27,9 +27,16 @@
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+        'views/cita_viex.xml',
+        'views/empleado_view.xml',
+        'views/horario_view.xml'
+        'security/ir.model.access.csv',
+        'security/security.xml',
+        'security/menu.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
+    'application' : True,
 }

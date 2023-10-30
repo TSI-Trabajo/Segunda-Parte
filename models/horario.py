@@ -5,7 +5,10 @@ class Horario(models.Model):
      _name = 'upobarber.horario'
      _description = 'Horario'
      
-     horaFIn = fields.Char(string="Hora de finalizacion", size=9, required=True)
+     horaInicio = fields.Datetime()
+     horaFIn = fields.Datetime()
+     fecha = fields.Date()
+     disponible = fields.Boolean()
 
      id_Cita = fields.One2many('upobarber.cita','id_horario','Citas')
      dni_Empleado = fields.One2many("upobarber.empleado",'id_horario','Empleados')

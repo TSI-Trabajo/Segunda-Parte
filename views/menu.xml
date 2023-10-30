@@ -1,0 +1,12 @@
+<odoo>
+    <!-- Top menu item -->
+  <menuitem name="upoBarber" id="main_upoBarber_menu" groups="group_upoBarber_manager"/>
+
+  <!-- menu categories -->
+  <menuitem name="upoBarber" id="upoBarber_menu" groups="group_upoBarber_manager" parent="main_upoBarber_menu"/>
+
+  <!-- actions -->
+  <menuitem name="Cita" id="cita_menu" parent="upoBarber_menu" groups="group_upoBarber_manager" action="cita_list_action"/>
+  <menuitem name="Horario" id="horario_menu" parent="upoBarber_menu" groups="group_upoBarber_manager" action="users_list_action"/>
+  <menuitem name="Empleado" id="Empleado_menu" parent="upoBarber_menu" groups="group_upoBarber_manager" action="instructores_list_action"/>
+</odoo>

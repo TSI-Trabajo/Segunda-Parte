@@ -6,7 +6,10 @@
       <form string="Horario">
         <sheet layout="auto">
           <group>
+            <field name="fecha" />
+            <field name="horaInicio" />
             <field name="horaFin" />
+            <field name="disponible" />
             <field name="id_Cita" widget="one2many" />
             <field name="dni_Empleado" widget="one2many" />
           </group>
@@ -20,9 +23,12 @@
     <field name="model">upobarber.horario</field>
     <field name="arch" type="xml">
       <tree string="tree_string">
-        <field name="horaFin" />
-        <field name="id_Cita" widget="one2many" />
-        <field name="dni_Empleado" widget="one2many" />
+            <field name="fecha" />
+            <field name="horaInicio" />
+            <field name="horaFin" />
+            <field name="disponible" />
+            <field name="id_Cita" widget="one2many" />
+            <field name="dni_Empleado" widget="one2many" />
       </tree>
     </field>
   </record>
