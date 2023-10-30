@@ -1,0 +1,31 @@
+<odoo>
+  <record id="upobarber_pago_form_view" model="ir.ui.view">
+    <field name="name">upobarber.pago.form</field>
+    <field name="model">upobarber.pago</field>
+    <field name="arch" type="xml">
+      <form string="Pago">
+        <sheet layout="auto">
+          <group>
+            <field name="idPago" />
+            <field name="metodo" />
+            <field name="importe" />
+            <field name="pagado" />
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="upobarber_pago_tree_view" model="ir.ui.view">
+    <field name="name">upobarber.pago.tree</field>
+    <field name="model">upobarber.pago</field>
+    <field name="arch" type="xml">
+      <tree string="tree_string">
+            <field name="idPago" />
+            <field name="metodo" />
+            <field name="importe" />
+            <field name="pagado" />
+      </tree>
+    </field>
+  </record>
+</odoo>
