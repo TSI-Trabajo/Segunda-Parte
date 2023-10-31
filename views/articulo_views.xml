@@ -3,7 +3,7 @@
         <field name="name">articulo.tree</field>
         <field name="model">upobarber.articulo</field>
         <field name="arch" type="xml">
-            <!-- Define la vista de árbol aquí -->
+            <!-- Vista de Arbol -->
             <tree string="Lista de Articulos">
                 <field name="articulo_id"/>
                 <field name="precio"/>
@@ -17,7 +17,7 @@
         <field name="name">articulo.form</field>
         <field name="model">upobarber.articulo</field>
         <field name="arch" type="xml">
-            <!-- Define la vista de formulario aquí -->
+            <!-- Vista de Formulario -->
             <form string="Articulo">
                 <sheet layout="auto">
                     <group>

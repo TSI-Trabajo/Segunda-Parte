@@ -3,14 +3,14 @@
         <field name="name">producto.tree</field>
         <field name="model">upobarber.producto</field>
         <field name="arch" type="xml">
-            <!-- Define la vista de árbol aquí -->
+            <!-- Vista de Arbol -->
             <tree string="Lista de Productos">
                 <field name="producto_id"/>
                 <field name="marca"/>
                 <field name="modelo"/>
                 <field name="foto"/>
                 <field name="articulo_ids" widget="one2many"/>
-                <!--<field name="tipoproducto_id" widget="many2one"/>-->
+                <field name="tipoproducto_id" widget="many2one"/>
             </tree>
         </field>
     </record>
@@ -19,7 +19,7 @@
         <field name="name">producto.form</field>
         <field name="model">upobarber.producto</field>
         <field name="arch" type="xml">
-            <!-- Define la vista de formulario aquí -->
+            <!-- Vista de Formulario -->
             <form string="Producto">
                 <sheet layout="auto">
                     <group>
@@ -28,7 +28,7 @@
                         <field name="modelo"/>
                         <field name="foto"/>
                         <field name="articulo_ids" widget="one2many"/>
-                        <!--<field name="tipoproducto_id" widget="many2one"/>-->
+                        <field name="tipoproducto_id" widget="many2one"/>
                     </group>
                 </sheet>
             </form>

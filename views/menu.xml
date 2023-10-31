@@ -1,5 +1,5 @@
 <odoo>
-  <!-- Define la acción de lista para el modelo "upobarber.articulo" -->
+  <!-- Acción de lista para el modelo "upobarber.articulo" -->
   <record id="articulo_list_action" model="ir.actions.act_window">
     <field name="name">Articulo</field>
     <field name="res_model">upobarber.articulo</field>
@@ -9,7 +9,7 @@
     </field>
   </record>
 
-  <!-- Define la acción de lista para el modelo "upobarber.producto" -->
+  <!-- Acción de lista para el modelo "upobarber.producto" -->
   <record id="producto_list_action" model="ir.actions.act_window">
     <field name="name">Producto</field>
     <field name="res_model">upobarber.producto</field>
@@ -19,7 +19,7 @@
     </field>
   </record>
 
-   <!-- Define la acción de lista para el modelo "upobarber.tipoproducto" -->
+   <!-- Acción de lista para el modelo "upobarber.tipoproducto" -->
   <record id="tipoproducto_list_action" model="ir.actions.act_window">
     <field name="name">Tipo Producto</field>
     <field name="res_model">upobarber.tipoproducto</field>

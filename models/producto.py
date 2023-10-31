@@ -12,5 +12,5 @@ class Producto(models.Model):
     modelo = fields.Char(string="Modelo", required=True)
     foto = fields.Binary('Foto')
 
-    articulo_ids = fields.One2many('upobarber.articulo', 'producto_id', string="Artículos Relacionados")
-    #tipoproducto_id = fields.Many2one('upobarber.tipoproducto', string="Tipo de Producto")
+    articulo_ids = fields.One2many('upobarber.articulo', 'producto_id', "Articulo")
+    tipoproducto_id = fields.Many2one('upobarber.tipoproducto', string="Tipo de Producto")

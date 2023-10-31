@@ -1,2 +1,2 @@
-producto_id,marca,modelo,foto,articulo_ids
+producto_id,marca,modelo,foto,articulo_ids/id
 1,"iPhone","14 Pro","caja.png",1
