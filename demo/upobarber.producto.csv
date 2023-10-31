@@ -1,4 +1,2 @@
-producto_id,marca,modelo,precio,photo,tipo_producto_id,articulo_id
-producto0,"iPhone","14 Pro Max",1550.99,"caja.png",tipo_producto0,articulo0
-producto1,"Portobello","Hair",15.99,"caja.png",tipo_producto1,articulo1
-producto2,"Hugo Boss","Bottled",54.95,"caja.png",tipo_producto2,articulo2
+producto_id,marca,modelo,foto,articulo_ids
+1,"iPhone","14 Pro","caja.png",1

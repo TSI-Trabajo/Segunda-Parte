@@ -1,78 +1,34 @@
 <odoo>
-  <record id="upobarber_articulo_form_view" model="ir.ui.view">
-    <field name="name">upobarber.articulo.form</field>
-    <field name="model">upobarber.articulo</field>
-    <field name="arch" type="xml">
-      <form string="Articulo">
-        <sheet layout="auto">
-          <group>
-            <field name="name" />
-            <field name="marca" />
-            <field name="modelo" />
-            <field name="precio" />
-            <field name="stock" />
-            <field name="photo" />
-            <field name="producto_id" widget="many2one" />
-            <!--<field name="users_ids">
-              <tree>
-                <field name="name" />
-                <field name="idcard" />
-              </tree>
-            </field>-->
-          </group>
-        </sheet>
-      </form>
-    </field>
-  </record>
+    <record id="articulo_tree_view" model="ir.ui.view">
+        <field name="name">articulo.tree</field>
+        <field name="model">upobarber.articulo</field>
+        <field name="arch" type="xml">
+            <!-- Define la vista de árbol aquí -->
+            <tree string="Lista de Articulos">
+                <field name="articulo_id"/>
+                <field name="precio"/>
+                <field name="stock"/>
+                <field name="producto_id" widget="many2one"/>
+            </tree>
+        </field>
+    </record>
 
-  <record id="upobarber_articulo_tree_view" model="ir.ui.view">
-    <field name="name">upobarber.articulo.tree</field>
-    <field name="model">upobarber.articulo</field>
-    <field name="arch" type="xml">
-      <tree string="tree_string">
-        <field name="name" />
-            <field name="marca" />
-            <field name="modelo" />
-            <field name="precio" />
-            <field name="stock" />
-            <field name="photo" />
-            <field name="producto_id" widget="many2one" />
-      </tree>
-    </field>
-  </record>
-
-  <!--<record id="upobarber_articulo_calendar_view" model="ir.ui.view">
-    <field name="name">upobarber.articulo.calendar</field>
-    <field name="model">upobarber.articulo</field>
-    <field name="arch" type="xml">
-      <calendar string="Clses" color="activityType" date_start="start" date_stop="end" mode="month">
-        <field name="name" />
-        <field name="capacity" />
-      </calendar>
-    </field>
-  </record>-->
-
-  <!--<record id="upobarber_articulo_search_view" model="ir.ui.view">
-    <field name="name">upobarber.articulo.search</field>
-    <field name="model">upobarber.articulo</field>
-    <field name="arch" type="xml">
-      <search>
-        <filter name="search_capacity" string="Capacity > 10" domain="[('capacity','>',10)]" />
-        <separator orientation="vertical" />
-        <group expand="0" string="Agrupar por...">
-          <filter name="group_by_instructor" string="Instructor" context="{'group_by':'instructores_id'}" />
-        </group>
-      </search>
-    </field>
-  </record>-->
-
-  <!--<record id="articulo_list_action" model="ir.actions.act_window">
-    <field name="name">articulo</field>
-    <field name="res_model">upobarber.articulo</field>   
-    <field name="search_view_id" ref="upobarber_articulo_search_view"/> 
-    <field name="view_mode">tree,form,calendar</field>    
-    <field name="help" type="html">
-      <p class="o_view_nocontent_smiling_face">Create the first user</p>
-    </field>    
-  </record>-->
+    <record id="articulo_form_view" model="ir.ui.view">
+        <field name="name">articulo.form</field>
+        <field name="model">upobarber.articulo</field>
+        <field name="arch" type="xml">
+            <!-- Define la vista de formulario aquí -->
+            <form string="Articulo">
+                <sheet layout="auto">
+                    <group>
+                        <field name="articulo_id"/>
+                        <field name="precio"/>
+                        <field name="stock"/>
+                        <field name="producto_id" widget="many2one"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
 </odoo>
+

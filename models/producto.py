@@ -6,11 +6,11 @@ class Producto(models.Model):
     _name = 'upobarber.producto'
     _description = 'Productos de UpoBarber'
 
-    producto_id = fields.Char(string="ID Producto", required=True)
+    producto_id = fields.Integer(string="ID Producto", required=True, index=True)
+
     marca = fields.Char(string="Marca", required=True)
     modelo = fields.Char(string="Modelo", required=True)
-    precio = fields.Float(string="Precio")
-    photo=fields.Binary('Photo')
+    foto = fields.Binary('Foto')
 
-    tipo_producto_id = fields.Many2one('upobarber.tipo_producto', string="Tipo de Producto", required=True)
-    articulo_id = fields.Many2one('upobarber.articulo', string="Artículo Relacionado", required=True)
+    articulo_ids = fields.One2many('upobarber.articulo', 'producto_id', string="Artículos Relacionados")
+    #tipoproducto_id = fields.Many2one('upobarber.tipoproducto', string="Tipo de Producto")

@@ -2,4 +2,4 @@
 
 from . import articulo
 from . import producto
-from . import tipo_producto
+from . import tipoproducto

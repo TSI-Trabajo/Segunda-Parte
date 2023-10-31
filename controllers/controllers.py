@@ -2,20 +2,20 @@
 # from odoo import http
 
 
-# class Upobarber(http.Controller):
-#     @http.route('/upobarber/upobarber', auth='public')
+# class Gym(http.Controller):
+#     @http.route('/gym/gym', auth='public')
 #     def index(self, **kw):
 #         return "Hello, world"
 
-#     @http.route('/upobarber/upobarber/objects', auth='public')
+#     @http.route('/gym/gym/objects', auth='public')
 #     def list(self, **kw):
-#         return http.request.render('upobarber.listing', {
-#             'root': '/upobarber/upobarber',
-#             'objects': http.request.env['upobarber.upobarber'].search([]),
+#         return http.request.render('gym.listing', {
+#             'root': '/gym/gym',
+#             'objects': http.request.env['gym.gym'].search([]),
 #         })
 
-#     @http.route('/upobarber/upobarber/objects/<model("upobarber.upobarber"):obj>', auth='public')
+#     @http.route('/gym/gym/objects/<model("gym.gym"):obj>', auth='public')
 #     def object(self, obj, **kw):
-#         return http.request.render('upobarber.object', {
+#         return http.request.render('gym.object', {
 #             'object': obj
 #         })

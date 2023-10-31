@@ -1,0 +1,31 @@
+<odoo>
+    <record id="tipoproducto_tree_view" model="ir.ui.view">
+        <field name="name">tipoproducto.tree</field>
+        <field name="model">upobarber.tipoproducto</field>
+        <field name="arch" type="xml">
+            <!-- Define la vista de árbol aquí -->
+            <tree string="Lista de Tipos de Productos">
+                <field name="tipoproducto_id"/>
+                <field name="nombre"/>
+                <!--<field name="articulo_ids" widget="one2many"/>-->
+            </tree>
+        </field>
+    </record>
+
+    <record id="tipoproducto_form_view" model="ir.ui.view">
+        <field name="name">tipoproducto.form</field>
+        <field name="model">upobarber.tipoproducto</field>
+        <field name="arch" type="xml">
+            <!-- Define la vista de formulario aquí -->
+            <form string="Tipo Producto">
+                <sheet layout="auto">
+                    <group>
+                        <field name="tipoproducto_id"/>
+                        <field name="nombre"/>
+                        <!--<field name="articulo_ids" widget="one2many"/>-->
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

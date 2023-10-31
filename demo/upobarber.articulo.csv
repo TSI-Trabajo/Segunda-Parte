@@ -1,4 +1,3 @@
-id,name,marca,modelo,precio,stock,photo,producto_id
-articulo0,"Telefono","iPhone","14 Pro Max",1550.99,3,"caja.png",producto0
-articulo1,"Cera","Portobello","Hair",15.99,3,"caja.png",producto1
-articulo2,"Perfume","Hugo Boss","Bottled",54.95,6,"caja.png",producto2
+articulo_id,precio,stock,producto_id
+1,50,2,1
+2,75,3,1
