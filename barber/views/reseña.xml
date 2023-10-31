@@ -1,0 +1,31 @@
+<odoo>
+    <record id="reseña_tree_view" model="ir.ui.view">
+        <field name="name">reseña.tree</field>
+        <field name="model">upobarber.reseña</field>
+        <field name="arch" type="xml">
+            <!-- Vista de Arbol -->
+                <tree string="Reseñas">
+                <field name="reseña_id"/>
+                <field name="puntuación"/>
+                <field name="comentarios"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="reseña_form_view" model="ir.ui.view">
+        <field name="name">reseña.form</field>
+        <field name="model">upobarber.reseña</field>
+        <field name="arch" type="xml">
+            <!-- Vista de Formulario -->
+            <form string="Reseña">
+                <sheet layout="auto">
+                    <group>
+                        <field name="reseña_id"/>
+                        <field name="puntuación"/>
+                        <field name="comentarios"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

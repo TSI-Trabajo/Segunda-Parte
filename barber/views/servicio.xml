@@ -1,0 +1,33 @@
+<odoo>
+    <record id="servicio_tree_view" model="ir.ui.view">
+        <field name="name">servicio.tree</field>
+        <field name="model">upobarber.servicio</field>
+        <field name="arch" type="xml">
+            <!-- Vista de Arbol -->
+            <tree string="Lista de Servicios">
+                <field name="Nombre Servicio"/>
+                <field name="Tiempo"/>
+                <field name="Precio"/>
+                <field name="tipo_servicio" widget="many2one"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="articulo_form_view" model="ir.ui.view">
+        <field name="name">articulo.form</field>
+        <field name="model">upobarber.articulo</field>
+        <field name="arch" type="xml">
+            <!-- Vista de Formulario -->
+            <form string="Articulo">
+                <sheet layout="auto">
+                    <group>
+                        <field name="articulo_id"/>
+                        <field name="precio"/>
+                        <field name="stock"/>
+                        <field name="producto_id" widget="many2one"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
