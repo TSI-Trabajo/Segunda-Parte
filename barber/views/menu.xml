@@ -1,0 +1,43 @@
+<odoo>
+  <!-- Acción de lista para el modelo "upobarber.articulo" -->
+  <record id="articulo_list_action" model="ir.actions.act_window">
+    <field name="name">Articulo</field>
+    <field name="res_model">upobarber.articulo</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Crea el primer Articulo</p>
+    </field>
+  </record>
+
+  <!-- Acción de lista para el modelo "upobarber.producto" -->
+  <record id="producto_list_action" model="ir.actions.act_window">
+    <field name="name">Producto</field>
+    <field name="res_model">upobarber.producto</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Crea el primer Producto</p>
+    </field>
+  </record>
+
+   <!-- Acción de lista para el modelo "upobarber.tipoproducto" -->
+  <record id="tipoproducto_list_action" model="ir.actions.act_window">
+    <field name="name">Tipo Producto</field>
+    <field name="res_model">upobarber.tipoproducto</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Crea el primer Tipo Producto</p>
+    </field>
+  </record>
+
+  <!-- Top menu item -->
+  <menuitem name="UpoBarber" id="main_upobarber_menu" groups="group_upobarber_manager"/>
+
+  <!-- menu categories -->
+  <menuitem name="UpoBarber" id="upobarber_menu" groups="group_upobarber_manager" parent="main_upobarber_menu"/>
+
+  <!-- actions -->
+  <menuitem name="Articulo" id="articulo_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="articulo_list_action"/>
+  <menuitem name="Producto" id="producto_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="producto_list_action"/>
+  <menuitem name="Tipo Producto" id="tipoproducto_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="tipoproducto_list_action"/>
+
+</odoo>
