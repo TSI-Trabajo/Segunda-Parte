@@ -1,0 +1,37 @@
+<odoo>
+  <record id="upobarber_empleado_form_view" model="ir.ui.view">
+    <field name="name">upobarber.empleado.form</field>
+    <field name="model">upobarber.empleado</field>
+    <field name="arch" type="xml">
+      <form string="Empleado">
+        <sheet layout="auto">
+          <group>
+            <field name="dniEmpleado" />
+            <field name="nombre" />
+            <field name="apellidos" />
+            <field name="telefono" />
+            <field name="correoElectronico" />
+            <field name="numeroCuenta" />
+            <field name="horario_id" widget="Many2one" />
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="upobarber_empleado_tree_view" model="ir.ui.view">
+    <field name="name">upobarber.empleado.tree</field>
+    <field name="model">upobarber.empleado</field>
+    <field name="arch" type="xml">
+      <tree string="tree_string">
+            <field name="dniEmpleado" />
+            <field name="nombre" />
+            <field name="apellidos" />
+            <field name="telefono" />
+            <field name="correoElectronico" />
+            <field name="numeroCuenta" />
+            <field name="horario_id" widget="Many2one" />
+      </tree>
+    </field>
+  </record>
+</odoo>

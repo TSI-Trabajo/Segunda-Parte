@@ -1,41 +1,45 @@
 <odoo>
-  <record id="peluqueria_clientes_form_view" model="ir.ui.view">
-    <field name="name">peluqueria.clientes.form</field>
-    <field name="model">peluqueria.clientes</field>
+  <record id="upobarber_cliente_form_view" model="ir.ui.view">
+    <field name="name">upobarber.cliente.form</field>
+    <field name="model">upobarber.cliente</field>
     <field name="arch" type="xml">
-      <form string="Clientes">
+      <form string="cliente">
         <sheet layout="auto">
           <group>
-            <field name="name" />
+            <field name="dni_Cliente" />
+            <field name="nombre" />
             <field name="apellidos" />
             <field name="telefono" />
-            <field name="dni" />
             <field name="correoElectronico" />
-            <field name="citas_ids" widget="many2one" />
+            <field name="foto" />
+            <field name="cita_id" widget="many2one" />
+            <!--<field name="compra_id" widget="many2one" />-->
           </group>
         </sheet>
       </form>
     </field>
   </record>
 
-  <record id="peluquerias_clientes_tree_view" model="ir.ui.view">
-    <field name="name">peluqueria.clientes.tree</field>
-    <field name="model">peluqueria.clientes</field>
+  <record id="upobarber_cliente_tree_view" model="ir.ui.view">
+    <field name="name">upobarber.cliente.tree</field>
+    <field name="model">upobarber.cliente</field>
     <field name="arch" type="xml">
-      <tree string="Clientes">
-        <field name="name" />
-        <field name="apellidos" />
-        <field name="telefono" />
-        <field name="dni" />
-        <field name="correoElectronico" />
-        <field name="citas_ids" widget="many2one" />
+      <tree string="cliente">
+       <field name="dni_Cliente" />
+          <field name="nombre" />
+          <field name="apellidos" />
+          <field name="telefono" />
+          <field name="correoElectronico" />
+          <field name="foto" />
+          <field name="cita_id" widget="many2one" />
+          <!--<field name="compra_id" widget="many2one" />-->
       </tree>
     </field>
   </record>
 
-  <record id="clientes_list_action" model="ir.actions.act_window">
-    <field name="name">Clientes</field>
-    <field name="res_model">peluqueria.clientes</field>
+  <record id="cliente_list_action" model="ir.actions.act_window">
+    <field name="name">cliente</field>
+    <field name="res_model">upobarber.cliente</field>
     <field name="view_mode">tree,form</field>
     <field name="help" type="html">
       <p class="o_view_nocontent_smiling_face">Create the first user</p>

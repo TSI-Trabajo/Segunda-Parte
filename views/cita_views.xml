@@ -1,0 +1,53 @@
+<odoo>
+  <record id="upobarber_cita_form_view" model="ir.ui.view">
+    <field name="name">upobarber.cita.form</field>
+    <field name="model">upobarber.cita</field>
+    <field name="arch" type="xml">
+      <form string="cita">
+        <sheet layout="auto">
+          <group>
+            <field name="id_cita" />
+            <field name="confirmada" />
+            <field name="pagado" />
+            <field name="dni_Cliente" widget="One2many" />
+            <field name="reserva_id" widget="One2many" />
+            <field name="horario_id" widget="Many2one" />
+          <!--  <field name="pago_id" widget="One2one" />
+            <field name="reseña_id" widget="One2many" />
+            <field name="nombreServicio" widget="Many2one" /> -->
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="upobarber_cita_tree_view" model="ir.ui.view">
+    <field name="name">upobarber.cita.tree</field>
+    <field name="model">upobarber.cita</field>
+    <field name="arch" type="xml">
+      <tree string="cita">
+        <field name="id_cita" />
+        <field name="confirmada" />
+        <field name="pagado" />
+        <field name="dni_Cliente" widget="One2many" />
+        <field name="reserva_id" widget="One2many" />
+       <field name="horario_id" widget="Many2one" />
+     <!--   <field name="pago_id" widget="One2one" />
+        <field name="reseña_id" widget="One2many" />
+        <field name="nombreServicio" widget="Many2one" /> -->
+      </tree>
+    </field>
+  </record>
+
+  <record id="cita_list_action" model="ir.actions.act_window">
+        <field name="name">cita</field>
+        <field name="res_model">upobarber.cita</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">Create the first user</p>
+        </field>
+   </record>
+
+    
+
+</odoo>

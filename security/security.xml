@@ -1,5 +1,5 @@
 <odoo>
-    <record id="group_upoBarber_manager" model="res.groups">
-        <field name="name">upoBarber / Manager</field>
+    <record id="group_upobarber_manager" model="res.groups">
+        <field name="name">upobarber / Manager</field>
     </record>
 </odoo>

@@ -1,0 +1,2 @@
+id_cita,confirmada,pagado, dni_Cliente/id, reserva_id/id 
+123,True,False,"12345678A",1234
