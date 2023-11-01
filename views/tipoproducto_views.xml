@@ -1,29 +1,50 @@
 <odoo>
-    <record id="tipoproducto_tree_view" model="ir.ui.view">
-        <field name="name">tipoproducto.tree</field>
-        <field name="model">upobarber.tipoproducto</field>
-        <field name="arch" type="xml">
-            <!-- Vista de Arbol -->
-            <tree string="Lista de Tipos de Productos">
-                <field name="tipoproducto_id"/>
-                <field name="nombre"/>
-            </tree>
-        </field>
-    </record>
-
-    <record id="tipoproducto_form_view" model="ir.ui.view">
-        <field name="name">tipoproducto.form</field>
+    <record id="upobarber_tipoproducto_form_view" model="ir.ui.view">
+        <field name="name">upobarber.tipoproducto.form</field>
         <field name="model">upobarber.tipoproducto</field>
         <field name="arch" type="xml">
             <!-- Vista de Formulario -->
             <form string="Tipo Producto">
                 <sheet layout="auto">
-                    <group>
-                        <field name="tipoproducto_id"/>
-                        <field name="nombre"/>
-                    </group>
+                    <notebook>
+                        <page name="datos_tipoproducto" string="Tipo Producto">
+                            <group>
+                                <field name="name"/>
+                                <field name="nombre"/>
+                            </group>
+                        </page>
+                        <page name="producto" string="Producto">
+                            <group>
+                                <field name="producto_ids" widget="one2many" />
+                            </group>
+                        </page>
+
+                    </notebook>
+
                 </sheet>
             </form>
         </field>
     </record>
+    <record id="upobarber_tipoproducto_tree_view" model="ir.ui.view">
+        <field name="name">upobarber.tipoproducto.tree</field>
+        <field name="model">upobarber.tipoproducto</field>
+        <field name="arch" type="xml">
+            <!-- Vista de Arbol -->
+            <tree string="tree_string">
+                <field name="name"/>
+                <field name="nombre"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Acción de lista para el modelo "upobarber.tipoproducto" -->
+    <record id="tipoproducto_list_action" model="ir.actions.act_window">
+        <field name="name">Tipo Producto</field>
+        <field name="res_model">upobarber.tipoproducto</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Crea el primer Tipo Producto</p>
+        </field>
+    </record>
+
 </odoo>

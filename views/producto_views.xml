@@ -1,37 +1,52 @@
 <odoo>
-    <record id="producto_tree_view" model="ir.ui.view">
-        <field name="name">producto.tree</field>
-        <field name="model">upobarber.producto</field>
-        <field name="arch" type="xml">
-            <!-- Vista de Arbol -->
-            <tree string="Lista de Productos">
-                <field name="producto_id"/>
-                <field name="marca"/>
-                <field name="modelo"/>
-                <field name="foto"/>
-                <field name="articulo_ids" widget="one2many"/>
-                <field name="tipoproducto_id" widget="many2one"/>
-            </tree>
-        </field>
-    </record>
-
-    <record id="producto_form_view" model="ir.ui.view">
-        <field name="name">producto.form</field>
+    <record id="upobarber_producto_form_view" model="ir.ui.view">
+        <field name="name">upobarber.producto.form</field>
         <field name="model">upobarber.producto</field>
         <field name="arch" type="xml">
             <!-- Vista de Formulario -->
             <form string="Producto">
                 <sheet layout="auto">
-                    <group>
-                        <field name="producto_id"/>
-                        <field name="marca"/>
-                        <field name="modelo"/>
-                        <field name="foto"/>
-                        <field name="articulo_ids" widget="one2many"/>
-                        <field name="tipoproducto_id" widget="many2one"/>
-                    </group>
+                    <notebook>
+                        <page name="datos_producto" string="Info">
+                            <group>
+                                <field name="name"/>
+                                <field name="marca"/>
+                                <field name="modelo"/>
+                                <field name="foto"/>
+                                <field name="tipoproducto_id" widget="many2one"/>
+                            </group>
+
+                        </page>
+
+                        <page name= "articulo" string="Articulo">
+                            <group>
+                                <field name="articulo_ids" widget="one2many"/>
+                            </group>
+                        </page>
+                    </notebook>
+
                 </sheet>
             </form>
+        </field>
+    </record>
+    <record id="upobarber_producto_tree_view" model="ir.ui.view">
+        <field name="name">upobarber.producto.tree</field>
+        <field name="model">upobarber.producto</field>
+        <field name="arch" type="xml">
+            <!-- Vista de Arbol -->
+            <tree string="Lista de Productos">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Acción de lista para el modelo "upobarber.producto" -->
+    <record id="producto_list_action" model="ir.actions.act_window">
+        <field name="name">Producto</field>
+        <field name="res_model">upobarber.producto</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Crea el primer Producto</p>
         </field>
     </record>
 </odoo>

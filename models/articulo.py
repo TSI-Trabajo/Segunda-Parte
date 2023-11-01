@@ -7,8 +7,8 @@ class Articulo(models.Model):
     _name = 'upobarber.articulo'
     _description = 'Articulos Upobarber'
     
-    articulo_id = fields.Integer(string="Id Articulo", required=True, index=True)
-
+    #articulo_id = fields.Integer(string="Id Articulo", required=True, index=True)
+    name = fields.Char(string="Nombre", required=True)
     precio = fields.Float(string="Precio", required=True)
     stock = fields.Integer(string="Stock", required=True)
 

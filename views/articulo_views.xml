@@ -1,27 +1,12 @@
 <odoo>
-    <record id="articulo_tree_view" model="ir.ui.view">
-        <field name="name">articulo.tree</field>
+    <record id="upobarber_articulo_form_view" model="ir.ui.view">
+        <field name="name">upobarber.articulo.form</field>
         <field name="model">upobarber.articulo</field>
         <field name="arch" type="xml">
-            <!-- Vista de Arbol -->
-            <tree string="Lista de Articulos">
-                <field name="articulo_id"/>
-                <field name="precio"/>
-                <field name="stock"/>
-                <field name="producto_id" widget="many2one"/>
-            </tree>
-        </field>
-    </record>
-
-    <record id="articulo_form_view" model="ir.ui.view">
-        <field name="name">articulo.form</field>
-        <field name="model">upobarber.articulo</field>
-        <field name="arch" type="xml">
-            <!-- Vista de Formulario -->
             <form string="Articulo">
                 <sheet layout="auto">
                     <group>
-                        <field name="articulo_id"/>
+                        <field name="name"/>
                         <field name="precio"/>
                         <field name="stock"/>
                         <field name="producto_id" widget="many2one"/>
@@ -30,5 +15,30 @@
             </form>
         </field>
     </record>
+
+    <record id="upobarber_articulo_tree_view" model="ir.ui.view">
+        <field name="name">upobarber.articulo.tree</field>
+        <field name="model">upobarber.articulo</field>
+        <field name="arch" type="xml">
+            <!-- Vista de Arbol -->
+            <tree string="tree_string">
+                <field name="name"/>
+                <field name="precio"/>
+                <field name="stock"/>
+                <field name="producto_id" widget="many2one"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Acción de lista para el modelo "upobarber.articulo" -->
+    <record id="articulo_list_action" model="ir.actions.act_window">
+        <field name="name">Articulo</field>
+        <field name="res_model">upobarber.articulo</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Crea el primer Articulo</p>
+        </field>
+    </record>
+
 </odoo>
 

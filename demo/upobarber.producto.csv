@@ -1,2 +1,4 @@
-producto_id,marca,modelo,foto,articulo_ids/id
-1,"iPhone","14 Pro","caja.png",1
+id,name,marca,modelo,foto,tipoproducto_id/id
+producto0,"Perfume HUGO BOSS","HUGO BOSS","Boss Botled",,tipoproducto0
+producto1,"Polvo de Volumen Portobello","Portobello","Sandia",,tipoproducto1
+producto2,"Cepillo de Paleta GHD","GHD","Hair Brush Pad",,tipoproducto2

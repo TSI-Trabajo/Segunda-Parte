@@ -1,2 +1,4 @@
-tipoproducto_id,nombre
-1,"Telefono"
+id,name,nombre
+tipoproducto0,"Fragancias","Perfumes, agua de colonia, etc."
+tipoproducto1,"Producto para el Peinado","Ceras, lacas, etc."
+tipoproducto2,"Cuidado del Cabello","Peines, secadores, etc."

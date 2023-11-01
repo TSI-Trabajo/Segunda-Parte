@@ -31,9 +31,10 @@
     # only loaded in demonstration mode
     'demo': [
         #'demo/demo.xml',
-        'demo/upobarber.articulo.csv',
-        'demo/upobarber.producto.csv',
         'demo/upobarber.tipoproducto.csv',
+        'demo/upobarber.producto.csv',
+        'demo/upobarber.articulo.csv',
+        
     ],
     'application': True,
 }

@@ -1,3 +1,4 @@
-articulo_id,precio,stock,producto_id/id
-1,50,2,1
-2,75,3,1
+id,name,precio,stock,producto_id:id
+articulo0,"Perfume HUGO BOSS",59.95,2,producto0
+articulo1,"Polvo de Volumen Portobello",9.99,15,producto1
+articulo2,"Cepillo de Paleta GHD",19.95,4,producto2
