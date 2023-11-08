@@ -1,0 +1,43 @@
+<odoo>
+  <!-- Define la acción de lista para el modelo "upobarber.resena" -->
+  <record id="resena_list_action" model="ir.actions.act_window">
+    <field name="name">resena</field>
+    <field name="res_model">upobarber.resena</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Pone tu resena</p>
+    </field>
+  </record>
+
+  <!-- Define la acción de lista para el modelo "upobarber.servicio" -->
+  <record id="servicio_list_action" model="ir.actions.act_window">
+    <field name="name">servicio</field>
+    <field name="res_model">upobarber.servicio</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Elige tu servicio</p>
+    </field>
+  </record>
+
+   <!-- Define la acción de lista para el modelo "upobarber.tiposervicio" -->
+  <record id="tiposervicio_list_action" model="ir.actions.act_window">
+    <field name="name">Tipo Servicio</field>
+    <field name="res_model">upobarber.tiposervicio</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Elige tu servicios </p>
+    </field>
+  </record>
+
+  <!-- Top menu item -->
+  <menuitem name="UpoBarber" id="main_upobarber_menu" groups="group_upobarber_manager"/>
+
+  <!-- menu categories -->
+  <menuitem name="UpoBarber" id="upobarber_menu" groups="group_upobarber_manager" parent="main_upobarber_menu"/>
+
+  <!-- actions -->
+  <menuitem name="resena" id="resena_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="resena_list_action"/>
+  <menuitem name="servicio" id="servicio_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="servicio_list_action"/>
+  <menuitem name="tiposervicio " id="tiposervicio_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="tiposervicio_list_action"/>
+
+</odoo>

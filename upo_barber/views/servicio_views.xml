@@ -1,0 +1,40 @@
+<odoo>
+    <record id="upobarber_servicio_form_view" model="ir.ui.view">
+        <field name="name">upobarber.servicio.form</field>
+        <field name="model">upobarber.servicio</field>
+        <field name="arch" type="xml">
+            <form string="servicio">
+                <sheet layout="auto">
+                    <group>
+                        <field name="nombre_servicio" />
+                        <field name="tiempo" />
+                        <field name="precio" />
+                        <field name="tipo_servicio" widget="many2one" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="upobarber_servicio_tree_view" model="ir.ui.view">
+        <field name="name">upobarber.servicio.tree</field>
+        <field name="model">upobarber.servicio</field>
+        <field name="arch" type="xml">
+            <tree string="servicio">
+                <field name="nombre_servicio" />
+                <field name="tiempo" />
+                <field name="precio" />
+                <field name="tipo_servicio" widget="many2one" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="servicio_list_action" model="ir.actions.act_window">
+        <field name="name">servicio</field>
+        <field name="res_model">upobarber.servicio</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first user</p>
+        </field>
+    </record>
+</odoo>
