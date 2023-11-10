@@ -8,6 +8,6 @@ class tiposervicio(models.Model):
 
     
     tipo_servicio = fields.Char(string="Tipo Servicio", required=True, index=True)
-    descripción = fields.Char(string="Descripción", required=True)
+    descripcion = fields.Char(string="descripcion", required=True)
 
     

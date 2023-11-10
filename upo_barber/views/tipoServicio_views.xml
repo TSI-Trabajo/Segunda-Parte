@@ -7,7 +7,7 @@
                 <sheet layout="auto">
                     <group>
                         <field name="tipo_servicio" />
-                        <field name="descripción" />
+                        <field name="descripcion" />
                     </group>
                 </sheet>
             </form>
@@ -20,7 +20,7 @@
         <field name="arch" type="xml">
             <tree string="tiposervicio">
                 <field name="tipo_servicio" />
-                <field name="descripción" />
+                <field name="descripcion" />
             </tree>
         </field>
     </record>

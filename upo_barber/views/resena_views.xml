@@ -7,7 +7,7 @@
         <sheet layout="auto">
           <group>
             <field name="resena_id" />
-            <field name="puntuación" />
+            <field name="puntuacion" />
             <field name="comentarios" />
           </group>
         </sheet>
@@ -21,7 +21,7 @@
         <field name="arch" type="xml">
             <tree string="resena">
                 <field name="resena_id" />
-                <field name="puntuación" />
+                <field name="puntuacion" />
                 <field name="comentarios" />
             </tree>
         </field>
