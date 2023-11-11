@@ -33,7 +33,7 @@
                 <!-- Define search filters and fields -->
                 <filter name="filter_all" string="Todos" domain="[]" context="{'group_by': 'tipo_servicio'}"/>
                 <filter name="filter_corte" string="Corte" domain="[('tipo_servicio', '=', 'Corte')]"/>
-                <filter name="filter_barba" string="Barba" domain="[('tipo_servicio', 'ilike', 'Barba')]"/>
+                <filter name="filter_barba" string="Barba" domain="[('tipo_servicio', '=', 'Barba')]"/>
                 <filter name="filter_corte_barba" string="Corte y barba" domain="[('tipo_servicio', 'ilike', 'Corte y barba')]"/>
 
                 <!-- Add more filters if needed -->

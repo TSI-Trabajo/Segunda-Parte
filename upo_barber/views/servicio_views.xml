@@ -6,7 +6,7 @@
             <form string="servicio">
                 <sheet layout="auto">
                     <group>
-                        <field name="nombre_servicio" />
+                        <field name="nombre_servicio" required="1" />
                         <field name="tiempo" />
                         <field name="precio" />
                         <field name="tipo_servicio" widget="many2one" />
@@ -21,7 +21,7 @@
         <field name="model">upobarber.servicio</field>
         <field name="arch" type="xml">
             <tree string="servicio">
-                <field name="nombre_servicio" />
+                <field name="nombre_servicio" required="1" />
                 <field name="tiempo" />
                 <field name="precio" />
                 <field name="tipo_servicio" widget="many2one" />
@@ -36,9 +36,9 @@
             <search string="Search Servicios">
                 <!-- Define search filters and fields -->
                 <filter name="filter_all" string="Todos" domain="[]" context="{'group_by': 'tipo_servicio'}"/>
-                <filter name="filter_corte" string="Corte" domain="[('nombre_servicio', '=', 'Corte')]"/>
-                <filter name="filter_barba" string="Barba" domain="[('nombre_servicio', 'ilike', 'Barba')]"/>
-                <filter name="filter_corte_barba" string="Corte y barba" domain="[('nombre_servicio', 'ilike', 'Corte y barba')]"/>
+                <filter name="filter_corte" string="Corte" domain="[('nombre_servicio', '=', 'corte')]"/>
+                <filter name="filter_barba" string="Barba" domain="[('nombre_servicio', '=', 'barba')]"/>
+                <filter name="filter_corte_barba" string="Corte y barba" domain="[('nombre_servicio', '=', 'corte_barba')]"/>
 
                 <!-- Add more filters if needed -->
             </search>
