@@ -3,7 +3,7 @@
   <menuitem name="UpoBarber" id="main_upobarber_menu" groups="group_upobarber_manager"/>
 
   <!-- menu categories -->
-  <menuitem name="UpoBarber" id="upobarber_menu" groups="group_upobarber_manager" parent="main_upobarber_menu"/>
+  <menuitem name="Categorías" id="upobarber_menu" groups="group_upobarber_manager" parent="main_upobarber_menu"/>
 
   <!-- actions -->
   <menuitem name="Articulo" id="articulo_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="articulo_list_action"/>
