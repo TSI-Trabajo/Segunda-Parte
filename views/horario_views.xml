@@ -3,16 +3,15 @@
     <field name="name">upobarber.horario.form</field>
     <field name="model">upobarber.horario</field>
     <field name="arch" type="xml">
-      <form string="horario">
+      <form string="Horario">
         <sheet layout="auto">
           <group>
-            <field name="horario_id" />
-            <field name="fecha" />
+            <field name="name" />
             <field name="horarioInicio" />
             <field name="horarioFin" />
             <field name="disponible" />
-            <field name="dniEmpleado" widget="One2many" />
-            <field name="id_cita" widget="One2many" />
+            <field name="empleado_dnis" widget="One2many" />
+            <field name="cita_ids" widget="One2many" />
           </group>
         </sheet>
       </form>
@@ -24,14 +23,26 @@
     <field name="model">upobarber.horario</field>
     <field name="arch" type="xml">
       <tree string="tree_string">
-            <field name="horario_id" />
-            <field name="fecha" />
+            <field name="name" />
             <field name="horarioInicio" />
             <field name="horarioFin" />
             <field name="disponible" />
-            <field name="dniEmpleado" widget="One2many" />
-            <field name="id_cita" widget="One2many" />
+            <field name="empleado_dnis" widget="One2many" />
+            <field name="cita_ids" widget="One2many" />
       </tree>
     </field>
   </record>
+
+  <record id="horario_calendar_view" model="ir.ui.view">
+    <field name="name">Horario</field>
+    <field name="model">upobarber.horario</field>
+    <field name="type">calendar</field>
+    <field name="arch" type="xml">
+      <calendar string="vista de calendario" quick_add="False" date_start="horarioInicio" date_stop="horarioFin" mode="week" color="empleado_dnis">
+        <field name="cita_ids"/>
+        <field name="empleado_dnis"></field>
+      </calendar>
+    </field>
+  </record>
+
 </odoo>

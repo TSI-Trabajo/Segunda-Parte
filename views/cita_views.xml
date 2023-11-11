@@ -6,13 +6,13 @@
       <form string="cita">
         <sheet layout="auto">
           <group>
-            <field name="id_cita" />
+            <field name="name" />
             <field name="confirmada" />
             <field name="pagado" />
-            <field name="dni_Cliente" widget="One2many" />
-            <field name="reserva_id" widget="One2many" />
             <field name="horario_id" widget="Many2one" />
           <!--  <field name="pago_id" widget="One2one" />
+            <field name="dni_Cliente" widget="One2many" />
+            <field name="reserva_id" widget="One2many" />
             <field name="reseña_id" widget="One2many" />
             <field name="nombreServicio" widget="Many2one" /> -->
           </group>
@@ -26,13 +26,13 @@
     <field name="model">upobarber.cita</field>
     <field name="arch" type="xml">
       <tree string="cita">
-        <field name="id_cita" />
+        <field name="name" />
         <field name="confirmada" />
         <field name="pagado" />
-        <field name="dni_Cliente" widget="One2many" />
-        <field name="reserva_id" widget="One2many" />
        <field name="horario_id" widget="Many2one" />
      <!--   <field name="pago_id" widget="One2one" />
+        <field name="dni_Cliente" widget="One2many" />
+        <field name="reserva_id" widget="One2many" />
         <field name="reseña_id" widget="One2many" />
         <field name="nombreServicio" widget="Many2one" /> -->
       </tree>

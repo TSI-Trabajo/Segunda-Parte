@@ -6,7 +6,7 @@
       <form string="Empleado">
         <sheet layout="auto">
           <group>
-            <field name="dniEmpleado" />
+            <field name="name" />
             <field name="nombre" />
             <field name="apellidos" />
             <field name="telefono" />
@@ -24,7 +24,7 @@
     <field name="model">upobarber.empleado</field>
     <field name="arch" type="xml">
       <tree string="tree_string">
-            <field name="dniEmpleado" />
+            <field name="name" />
             <field name="nombre" />
             <field name="apellidos" />
             <field name="telefono" />
