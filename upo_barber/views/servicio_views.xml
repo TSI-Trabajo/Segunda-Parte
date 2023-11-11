@@ -29,6 +29,24 @@
         </field>
     </record>
 
+    <record id="upobarber_servicio_search_view" model="ir.ui.view">
+        <field name="name">upobarber.servicio.search</field>
+        <field name="model">upobarber.servicio</field>
+        <field name="arch" type="xml">
+            <search string="Search Servicios">
+                <!-- Define search filters and fields -->
+                <filter name="filter_all" string="Todos" domain="[]" context="{'group_by': 'tipo_servicio'}"/>
+                <filter name="filter_corte" string="Corte" domain="[('nombre_servicio', '=', 'Corte')]"/>
+                <filter name="filter_barba" string="Barba" domain="[('nombre_servicio', 'ilike', 'Barba')]"/>
+                <filter name="filter_corte_barba" string="Corte y barba" domain="[('nombre_servicio', 'ilike', 'Corte y barba')]"/>
+
+                <!-- Add more filters if needed -->
+            </search>
+        </field>
+    </record>
+
+
+
     <record id="servicio_list_action" model="ir.actions.act_window">
         <field name="name">servicio</field>
         <field name="res_model">upobarber.servicio</field>

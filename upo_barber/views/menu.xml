@@ -3,7 +3,7 @@
   <record id="resena_list_action" model="ir.actions.act_window">
     <field name="name">resena</field>
     <field name="res_model">upobarber.resena</field>
-    <field name="view_mode">tree,form</field>
+    <field name="view_mode">tree,form,graph</field>
     <field name="help" type="html">
       <p class="o_view_nocontent_smiling_face">Pone tu resena</p>
     </field>
@@ -36,8 +36,8 @@
   <menuitem name="UpoBarber" id="upobarber_menu" groups="group_upobarber_manager" parent="main_upobarber_menu"/>
 
   <!-- actions -->
-  <menuitem name="resena" id="resena_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="resena_list_action"/>
-  <menuitem name="servicio" id="servicio_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="servicio_list_action"/>
-  <menuitem name="tiposervicio " id="tiposervicio_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="tiposervicio_list_action"/>
+  <menuitem name="Resena" id="resena_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="resena_list_action"/>
+  <menuitem name="Servicio" id="servicio_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="servicio_list_action"/>
+  <menuitem name="Tipo servicio " id="tiposervicio_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="tiposervicio_list_action"/>
 
 </odoo>
