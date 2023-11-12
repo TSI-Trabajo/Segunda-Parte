@@ -1,18 +1,43 @@
 <odoo>
+  <!-- Define la acción de lista para el modelo "upobarber.resena" -->
+  <record id="resena_list_action" model="ir.actions.act_window">
+    <field name="name">resena</field>
+    <field name="res_model">upobarber.resena</field>
+    <field name="view_mode">tree,form,graph</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Pone tu resena</p>
+    </field>
+  </record>
+
+  <!-- Define la acción de lista para el modelo "upobarber.servicio" -->
+  <record id="servicio_list_action" model="ir.actions.act_window">
+    <field name="name">servicio</field>
+    <field name="res_model">upobarber.servicio</field>
+    <field name="view_mode">tree,form,search</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Elige tu servicio</p>
+    </field>
+  </record>
+
+   <!-- Define la acción de lista para el modelo "upobarber.tiposervicio" -->
+  <record id="tiposervicio_list_action" model="ir.actions.act_window">
+    <field name="name">Tipo Servicio</field>
+    <field name="res_model">upobarber.tiposervicio</field>
+    <field name="view_mode">tree,form,search</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Elige tu servicios </p>
+    </field>
+  </record>
+
   <!-- Top menu item -->
   <menuitem name="UpoBarber" id="main_upobarber_menu" groups="group_upobarber_manager"/>
 
   <!-- menu categories -->
-  <menuitem name="Categorías" id="upobarber_menu" groups="group_upobarber_manager" parent="main_upobarber_menu"/>
+  <menuitem name="UpoBarber" id="upobarber_menu" groups="group_upobarber_manager" parent="main_upobarber_menu"/>
 
   <!-- actions -->
-  <menuitem name="Cita" id="cita_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="cita_list_action"/>
-  <menuitem name="Empleado " id="empleado_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="empleado_list_action"/>
-  <menuitem name="Horario " id="horario_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="horario_list_action"/>
-  <menuitem name="Cliente" id="cliente_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="cliente_list_action"/>
-  <menuitem name="Reserva " id="reserva_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="reserva_list_action"/>
-  <menuitem name="Articulo" id="articulo_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="articulo_list_action"/>
-  <menuitem name="Producto" id="producto_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="producto_list_action"/>
-  <menuitem name="Tipo Producto" id="tipoproducto_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="tipoproducto_list_action"/>
+  <menuitem name="Resena" id="resena_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="resena_list_action"/>
+  <menuitem name="Servicio" id="servicio_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="servicio_list_action"/>
+  <menuitem name="Tipo servicio " id="tiposervicio_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="tiposervicio_list_action"/>
 
 </odoo>
