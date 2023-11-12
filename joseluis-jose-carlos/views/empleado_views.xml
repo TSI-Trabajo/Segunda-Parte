@@ -35,11 +35,50 @@
     </field>
   </record>
 
+  <!-- Vista adicional para empleado : Vista de tarjetas (Kanban) -->
+
+  <record id="upobarber_empleado_kanban_view" model="ir.ui.view">
+    <field name="name">upobarber.empleado.kanban</field>
+    <field name="model">upobarber.empleado</field>
+    <field name="arch" type="xml">
+      <kanban>
+        <field name="name" />
+        <field name="nombre" />
+        <field name="apellidos" />
+        <field name="telefono" />
+        <field name="correoElectronico" />
+        <templates>
+          <t t-name="kanban-box">
+            <div class="oe_kanban_global_click">
+              <div class="oe_kanban_details">
+                <strong>
+                  <field name="name"/>
+                </strong>
+                <div>
+                  Nombre: <field name="nombre"/>
+                </div>
+                <div>
+                  Apellidos: <field name="apellidos"/>
+                </div>
+                <div>
+                  Teléfono: <field name="telefono"/>
+                </div>
+                <div>
+                  Correo: <field name="correoElectronico"/>
+                </div>
+              </div>
+            </div>
+          </t>
+        </templates>
+      </kanban>
+    </field>
+  </record>
+
      <!-- Define la acción de lista para el modelo "upobarber.empleado" -->
   <record id="empleado_list_action" model="ir.actions.act_window">
     <field name="name">Empleado</field>
     <field name="res_model">upobarber.empleado</field>
-    <field name="view_mode">tree,form</field>
+    <field name="view_mode">tree,form,kanban</field>
     <field name="help" type="html">
       <p class="o_view_nocontent_smiling_face">Cree el primer empleado</p>
     </field>
