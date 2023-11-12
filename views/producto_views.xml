@@ -49,11 +49,45 @@
         </field>
     </record>
 
+    <record id="upobarber_producto_kanban_view" model="ir.ui.view">
+        <field name="name">upobarber.producto.kanban</field>
+        <field name="model">upobarber.producto</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="name"/>
+                <field name="marca"/>
+                <field name="modelo"/>
+                <field name="foto"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <strong>
+                                    <field name="name"/>
+                                </strong>
+                                <div>
+                                Marca: <field name="marca"/>
+                                </div>
+                                <div>
+                                Modelo: <field name="modelo"/>
+                                </div>
+                                <div>
+                                Foto: <field name="foto"/>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
     <record id="producto_list_action" model="ir.actions.act_window">
         <field name="name">Producto</field>
         <field name="res_model">upobarber.producto</field>
         <field name="search_view_id" ref="upobarber_producto_search_view"/>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="view_id" ref="upobarber_producto_kanban_view"/>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">Crea el primer Producto</p>
         </field>
