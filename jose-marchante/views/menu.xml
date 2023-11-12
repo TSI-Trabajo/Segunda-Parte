@@ -1,0 +1,64 @@
+<odoo>
+  <!-- Define la acción de lista para el modelo "upobarber.cita" -->
+  <record id="cita_list_action" model="ir.actions.act_window">
+    <field name="name">cita</field>
+    <field name="res_model">upobarber.cita</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Crea el primer cita</p>
+    </field>
+  </record>
+
+  <!-- Define la acción de lista para el modelo "upobarber.cliente" -->
+  <record id="cliente_list_action" model="ir.actions.act_window">
+    <field name="name">cliente</field>
+    <field name="res_model">upobarber.cliente</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Crea el primer cliente</p>
+    </field>
+  </record>
+
+   <!-- Define la acción de lista para el modelo "upobarber.reserva" -->
+  <record id="reserva_list_action" model="ir.actions.act_window">
+    <field name="name">reserva</field>
+    <field name="res_model">upobarber.reserva</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Crea la primer reserva </p>
+    </field>
+  </record>
+
+   <!-- Define la acción de lista para el modelo "upobarber.empleado" -->
+  <record id="empleado_list_action" model="ir.actions.act_window">
+    <field name="name">empleado</field>
+    <field name="res_model">upobarber.empleado</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Cree el primer empleado</p>
+    </field>
+  </record>
+
+   <!-- Define la acción de lista para el modelo "upobarber.horario" -->
+  <record id="horario_list_action" model="ir.actions.act_window">
+    <field name="name">horario</field>
+    <field name="res_model">upobarber.horario</field>
+    <field name="view_mode">calendar,tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Cree el primer horario</p>
+    </field>
+  </record>
+
+  <!-- Top menu item -->
+  <menuitem name="UpoBarber" id="main_upobarber_menu" groups="group_upobarber_manager"/>
+
+  <!-- menu categories -->
+  <menuitem name="UpoBarber" id="upobarber_menu" groups="group_upobarber_manager" parent="main_upobarber_menu"/>
+
+  <!-- actions -->
+  <menuitem name="Cita" id="cita_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="cita_list_action"/>
+  <menuitem name="Empleado " id="empleado_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="empleado_list_action"/>
+  <menuitem name="Horario " id="horario_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="horario_list_action"/>
+  <menuitem name="Cliente" id="cliente_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="cliente_list_action"/>
+  <menuitem name="Reserva " id="reserva_menu" parent="upobarber_menu" groups="group_upobarber_manager" action="reserva_list_action"/>
+</odoo>
