@@ -41,7 +41,10 @@
         'demo/upobarber.empleado.csv',
         'demo/upobarber.tipoproducto.csv',
         'demo/upobarber.producto.csv',
-        'demo/upobarber.articulo.csv',    
+        'demo/upobarber.articulo.csv',
+        'demo/upobarber.resena.csv',
+        'demo/upobarber.servicio.csv',
+        'demo/upobarber.tiposervicio.csv',
     ],
     'application': True,
 }
