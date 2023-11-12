@@ -60,4 +60,14 @@
     </field>
   </record>
 
+     <!-- Define la acción de lista para el modelo "upobarber.horario" -->
+  <record id="horario_list_action" model="ir.actions.act_window">
+    <field name="name">Horario</field>
+    <field name="res_model">upobarber.horario</field>
+    <field name="view_mode">calendar,tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Cree el primer horario</p>
+    </field>
+  </record>
+
 </odoo>

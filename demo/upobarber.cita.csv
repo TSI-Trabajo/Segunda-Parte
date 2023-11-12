@@ -1,2 +1,4 @@
 id,name,confirmada,pagado,horario_id/id
 cita0,0,0,0,horario0
+cita1,1,1,0,horario1
+cita2,2,0,1,horario2

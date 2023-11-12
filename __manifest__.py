@@ -2,12 +2,12 @@
 {
     'name': "upobarber",
 
-    'summary': """ Gestion de una peluquería""",
+    'summary': """Gestion del modulo upobarber""",
 
-    'description': """ Gestion de clientes, reservas y venta de productos """,
+    'description': """Gestion de peluqueria.""",
 
-    'author': "Carlos Marchante",
-    'website': "https://www.upo.com",
+    'author': "TSI - UPO",
+    'website': "https://www.upo.es",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/16.0/odoo/addons/base/data/ir_module_category_data.xml
@@ -20,19 +20,28 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/horario_views.xml',
         'views/cita_views.xml',
         'views/empleado_views.xml',
-        'views/menu.xml',
+        'views/cliente_views.xml',
+        'views/reserva_views.xml',
+        'views/articulo_views.xml',
+        'views/producto_views.xml',
+        'views/tipoproducto_views.xml',
+        'views/menu.xml', 
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/upobarber.horario.csv',
+        'demo/upobarber.cliente.csv',
+        'demo/upobarber.reserva.csv',
         'demo/upobarber.cita.csv',
-        'demo/upobarber.empleado.csv'
+        'demo/upobarber.empleado.csv',
+        'demo/upobarber.tipoproducto.csv',
+        'demo/upobarber.producto.csv',
+        'demo/upobarber.articulo.csv',    
     ],
     'application': True,
 }
