@@ -25,16 +25,13 @@
         'views/articulo_views.xml',
         'views/producto_views.xml',
         'views/tipoproducto_views.xml',
-        'views/menu.xml',
-        
+        'views/menu.xml', 
     ],
     # only loaded in demonstration mode
     'demo': [
-        #'demo/demo.xml',
         'demo/upobarber.tipoproducto.csv',
         'demo/upobarber.producto.csv',
-        'demo/upobarber.articulo.csv',
-        
+        'demo/upobarber.articulo.csv',    
     ],
     'application': True,
 }

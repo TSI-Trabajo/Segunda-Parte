@@ -32,8 +32,6 @@
                 <field name="name"/>
                 <field name="marca"/>
                 <field name="modelo"/>
-                <!--<field name="foto" widget="image" options='{"size": [100, 100]}'/>-->
-                <!--<field name="tipoproducto_id" widget="many2one"/>-->
                 <field name="tipoproducto_id" widget="selection"/>
             </tree>
         </field>
