@@ -7,3 +7,6 @@ reserva_manager,reserva_manager,model_upobarber_reserva,group_upobarber_manager,
 articulo_manager,articulo_manager,model_upobarber_articulo,group_upobarber_manager,1,1,1,1
 producto_manager,producto_manager,model_upobarber_producto,group_upobarber_manager,1,1,1,1
 tipoproducto_manager,tipoproducto_manager,model_upobarber_tipoproducto,group_upobarber_manager,1,1,1,1
+resena_manager,resena_manager,model_upobarber_resena,group_upobarber_manager,1,1,1,1
+servicio_manager,servicio_manager,model_upobarber_servicio,group_upobarber_manager,1,1,1,1
+tiposervicio_manager,tiposervicio_manager,model_upobarber_tiposervicio,group_upobarber_manager,1,1,1,1
