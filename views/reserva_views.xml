@@ -6,10 +6,10 @@
       <form string="reserva">
         <sheet layout="auto">
           <group>
-            <field name="reserva_id" />
+            <field name="name" />
             <field name="telefonoContacto" />
             <field name="fechaReserva" />
-            <field name="cita_id" widget="many2one" />
+            <field name="cita_id" widget="one2many" />
           </group>
         </sheet>
       </form>
@@ -21,10 +21,10 @@
     <field name="model">upobarber.reserva</field>
     <field name="arch" type="xml">
       <tree string="reserva">
-        <field name="reserva_id" />
+        <field name="name" />
         <field name="telefonoContacto" />
         <field name="fechaReserva" />
-        <field name="cita_id" widget="many2one" />
+        <field name="cita_id" widget="one2many" />
       </tree>
     </field>
   </record>

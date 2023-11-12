@@ -23,17 +23,16 @@
         # 'security/ir.model.access.csv',
         'security/security.xml',
         'security/ir.model.access.csv',
-        'views/cita_views.xml',
         'views/cliente_views.xml',
+        'views/cita_views.xml',
         'views/reserva_views.xml',
         'views/menu.xml'
-    
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/upobarber.cita.csv',
         'demo/upobarber.cliente.csv',
-        'demo/upobarber.reserva.csv'
+        'demo/upobarber.reserva.csv',
+        'demo/upobarber.cita.csv'
     ],
     'application': True,
 }
