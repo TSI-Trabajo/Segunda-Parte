@@ -31,10 +31,10 @@
     # only loaded in demonstration mode
     'demo': [
         #'demo/demo.xml',
-        'demo/upobarber.tiposervicio.csv',
-        'demo/upobarber.servicio.csv',
         'demo/upobarber.resena.csv',
-        
+        'demo/upobarber.servicio.csv',
+        'demo/upobarber.tiposervicio.csv',
+
     ],
     'application': True,
 }
