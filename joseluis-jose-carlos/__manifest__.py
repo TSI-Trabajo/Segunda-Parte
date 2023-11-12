@@ -31,6 +31,9 @@
         'views/producto_views.xml',
         'views/tipoproducto_views.xml',
         'views/menu.xml', 
+        'views/resena_views.xml',
+        'views/servicio_views.xml',
+        'views/tiposervicio_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
@@ -44,7 +47,7 @@
         'demo/upobarber.articulo.csv',
         'demo/upobarber.resena.csv',
         'demo/upobarber.servicio.csv',
-        'demo/upobarber.tiposervicio.csv',
+        'demo/upobarber.tiposervicio.csv'
     ],
     'application': True,
 }
