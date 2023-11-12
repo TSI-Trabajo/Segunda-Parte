@@ -8,3 +8,6 @@ from . import reserva
 from . import articulo
 from . import producto
 from . import tipoproducto
+from . import resena
+from . import servicio
+from . import tiposervicio
