@@ -10,8 +10,8 @@
             <field name="horarioInicio" />
             <field name="horarioFin" />
             <field name="disponible" />
-            <field name="empleado_dnis" widget="One2many" />
-            <field name="cita_ids" widget="One2many" />
+            <field name="empleado_dnis" widget="many2one" />
+            <field name="cita_ids" widget="many2one" />
           </group>
         </sheet>
       </form>
@@ -27,13 +27,13 @@
             <field name="horarioInicio" />
             <field name="horarioFin" />
             <field name="disponible" />
-            <field name="empleado_dnis" widget="One2many" />
-            <field name="cita_ids" widget="One2many" />
+            <field name="empleado_dnis" widget="many2one" />
+            <field name="cita_ids" widget="many2one" />
       </tree>
     </field>
   </record>
 
-  <record id="horario_calendar_view" model="ir.ui.view">
+  <record id="upobarber_horario_calendar_view" model="ir.ui.view">
     <field name="name">Horario</field>
     <field name="model">upobarber.horario</field>
     <field name="type">calendar</field>
@@ -42,6 +42,21 @@
         <field name="cita_ids"/>
         <field name="empleado_dnis"></field>
       </calendar>
+    </field>
+  </record>
+
+  <record id="upobarber_horario_view_search" model="ir.ui.view">
+    <field name="name">upobarber.horario.view.search</field>
+    <field name="model">upobarber.horario</field>
+    <field name="arch" type="xml">
+      <search string="Search">
+        <filter name="no_disponible" string="No disponible" domain="[('disponible', '!=', 'True')]"/>
+        <filter name="disponible" string="Disponible" domain="[('disponible', '=', 'True')]"/>
+        <separator/>
+        <group expand="0" string="group_by">
+          <filter name="group_by_empleado_dnis" string="Por Dni" context="{'group_by': 'empleado_dnis'}" />
+        </group>
+      </search>
     </field>
   </record>
 

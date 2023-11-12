@@ -13,4 +13,4 @@ class Empleado(models.Model):
      correoElectronico = fields.Char(string="Correo Electronico", size=50, required=True, help="Correo electronico del Empleado")
      numeroCuenta = fields.Char(string="NUmero de Cuenta", size=50, required=True, help="Numero de cuenta del empleado")
 
-     horario_id = fields.Many2one("upobarber.horario",string="Horario")
+     horario_id = fields.One2many("upobarber.horario","empleado_dnis","horarios")

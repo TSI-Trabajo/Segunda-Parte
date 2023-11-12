@@ -9,7 +9,7 @@
             <field name="name" />
             <field name="confirmada" />
             <field name="pagado" />
-            <field name="horario_id" widget="Many2one" />
+            <field name="horario_id" widget="one2many" />
           <!--  <field name="pago_id" widget="One2one" />
             <field name="dni_Cliente" widget="One2many" />
             <field name="reserva_id" widget="One2many" />
@@ -29,7 +29,7 @@
         <field name="name" />
         <field name="confirmada" />
         <field name="pagado" />
-       <field name="horario_id" widget="Many2one" />
+       <field name="horario_id" widget="one2many" />
      <!--   <field name="pago_id" widget="One2one" />
         <field name="dni_Cliente" widget="One2many" />
         <field name="reserva_id" widget="One2many" />

@@ -12,7 +12,7 @@
             <field name="telefono" />
             <field name="correoElectronico" />
             <field name="numeroCuenta" />
-            <field name="horario_id" widget="Many2one" />
+            <field name="horario_id" widget="one2many" />
           </group>
         </sheet>
       </form>
@@ -30,7 +30,7 @@
             <field name="telefono" />
             <field name="correoElectronico" />
             <field name="numeroCuenta" />
-            <field name="horario_id" widget="Many2one" />
+            <field name="horario_id" widget="one2many" />
       </tree>
     </field>
   </record>

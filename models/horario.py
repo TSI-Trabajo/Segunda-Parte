@@ -11,5 +11,5 @@ class Horario(models.Model):
      horarioFin = fields.Datetime(required=True)
      disponible = fields.Boolean(string="¿Disponible?")
 
-     empleado_dnis = fields.One2many("upobarber.empleado","horario_id","empleado")
-     cita_ids = fields.One2many("upobarber.cita","horario_id", "cita")
+     empleado_dnis = fields.Many2one("upobarber.empleado", string="Empleados")
+     cita_ids = fields.Many2one("upobarber.cita", string="Citas")

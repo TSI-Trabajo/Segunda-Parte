@@ -1,2 +1,2 @@
-id,name,nombre,apellidos,telefono,correoElectronico,numeroCuenta
-0,"45789544Q","Jose","Lopez","623145698","joselopezguillen2003@gmail.com","ES-455555353"
+id,name,nombre,apellidos,telefono,correoElectronico,numeroCuenta,horario_id/id
+empleado0,"45789544Q","Jose","Lopez","623145698","joselopezguillen2003@gmail.com","ES-455555353",horario0

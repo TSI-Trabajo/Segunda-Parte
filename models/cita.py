@@ -10,7 +10,7 @@ class Cita(models.Model):
      pagado = fields.Boolean(string="¿Pagado?", default=False)
 
      
-     horario_id = fields.Many2one("upobarber.horario",string="Horario")
+     horario_id = fields.One2many("upobarber.horario","cita_ids","horario")
      #dni_Cliente = fields.One2many("upobarber.cliente",'cita_id','Cliente')
      #reserva_id =  fields.One2many("upobarber.reserva",'cita_id','Reserva')
      #pago_id  = fields.One2one ("upobarber.pago",'Pago')
