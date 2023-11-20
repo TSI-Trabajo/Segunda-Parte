@@ -6,12 +6,12 @@
       <form string="Pago">
         <sheet layout="auto">
           <group>
-            <field name="idPago" />
-            <field name="metodo" widget="one2may" />
-            <field name="importe" />
+            <!--<field name="idPago" />-->
+            <field name="name"/>
+            <!--<field name="importe" />-->
             <field name="pagado" />
-            <field name="idCita" widget="one2one" />
-            <field name="idCompra" widget="one2one" />
+            <field name="metodo_id" widget="many2one" />
+            <field name="concepto"/>
           </group>
         </sheet>
       </form>
@@ -23,13 +23,24 @@
     <field name="model">upobarber.pago</field>
     <field name="arch" type="xml">
       <tree string="tree_string">
-            <field name="idPago" />
-            <field name="metodo" widget="one2may" />
-            <field name="importe" />
+            <!--<field name="idPago" />-->
+            <field name="name"/>
+            <!--<field name="importe" />-->
             <field name="pagado" />
-            <field name="idCita" widget="one2one" />
-            <field name="idCompra" widget="one2one" />
+            <field name="metodo_id" widget="many2one" />
+            <field name="concepto"/>
       </tree>
     </field>
   </record>
+
+    <record id="pago_list_action" model="ir.actions.act_window">
+    <field name="name">Pago</field>
+    <field name="res_model">upobarber.pago</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Realizar Pago</p>
+    </field>
+  </record>
+
+
 </odoo>

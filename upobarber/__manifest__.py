@@ -6,7 +6,7 @@
 
     'description': """Gestion del pago, metodo de pago, compra""",
 
-    'author': "TSI-UPO",
+    'author': "joseAntonioOrozcoRodriguez",
     'website': "https://www.upobarber.com",
 
     # Categories can be used to filter modules in modules listing
@@ -23,12 +23,13 @@
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/compra_view.xml',
-        'views/metodopago_view.xml',
         'views/pago_view.xml',
+        'views/metodopago_view.xml',
         'views/menus.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
   
     ],
+    'aplication': True,
 }
