@@ -8,3 +8,6 @@ from . import reserva
 from . import articulo
 from . import producto
 from . import tipoproducto
+from . import compra
+from . import pago
+from . import metodopago

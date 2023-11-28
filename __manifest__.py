@@ -22,6 +22,9 @@
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
+        #cargar reports
+        'reports/reports.xml',
+        'reports/empleado_report.xml',
         'views/horario_views.xml',
         'views/cita_views.xml',
         'views/empleado_views.xml',
@@ -30,6 +33,9 @@
         'views/articulo_views.xml',
         'views/producto_views.xml',
         'views/tipoproducto_views.xml',
+        'views/pago_views.xml',
+        'views/metodopago_views.xml',
+        'views/compra_views.xml',
         'views/menu.xml', 
     ],
     # only loaded in demonstration mode
