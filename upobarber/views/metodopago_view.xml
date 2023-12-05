@@ -6,7 +6,7 @@
       <form string="MetodoPago">
         <sheet layout="auto">
           <group>
-            <field name="name" />
+            <field name="name"/>
             <field name="metodos" />
           </group>
         </sheet>

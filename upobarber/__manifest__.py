@@ -29,7 +29,9 @@
     ],
     # only loaded in demonstration mode
     'demo': [
-  
+        'demo/upobarber.metodopago.csv',
+        'demo/upobarber.pago.csv',
+        'demo/upobarber.compra.csv',
     ],
     'aplication': True,
 }
