@@ -37,7 +37,7 @@
     <field name="model">upobarber.pago</field>
     <field name="arch" type="xml">
       <graph string="Cantidad de pagados" type="bar">
-        <field name="pagado" type="row" />
+        <field name="string_poner_pagado" type="row" />
         <field name="boolean_pagado_contar" type="measure" operator="sum" />
       </graph>
     </field>

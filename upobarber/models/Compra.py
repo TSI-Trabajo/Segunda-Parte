@@ -34,9 +34,3 @@ class Compra(models.Model):
         'UNIQUE (name)',
         'El id de la compra debe ser único.')
     ]
-
-    sql_constraints = [
-        ('pago_id_uniq',
-        'UNIQUE (pago_id)',
-        'El id del pago debe ser único.')
-    ]

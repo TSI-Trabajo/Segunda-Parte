@@ -19,11 +19,25 @@ class Pago(models.Model):
     #cita_id = fields.Many2one('upobarber.cita', string="Pago de la Cita")
     compra_id = fields.Many2one('upobarber.compra', string="Compra")
 
+    string_poner_pagado = fields.Char(string="Estado de los pagos para imprimir", compute='_compute_poner_pagado', store=True)
+    
+    @api.depends('pagado')
+    def _compute_poner_pagado(self):
+        for record in self:
+            if(record.pagado):
+                record.string_poner_pagado = "Pagado"
+            else:
+                record.string_poner_pagado = "No Pagado"
+            
+
+        
 
     @api.depends('pagado')
     def _compute_contar_pagado(self):
         for record in self:
             record.boolean_pagado_contar = self.search_count([('pagado','=',True)])
+    
+
 
     sql_constraints = [
         ('name_uniq',

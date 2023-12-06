@@ -26,6 +26,10 @@
         'views/pago_view.xml',
         'views/metodopago_view.xml',
         'views/menus.xml',
+        'reports/compra_report.xml',
+        'reports/pago_report.xml',
+        'reports/reports.xml',
+
     ],
     # only loaded in demonstration mode
     'demo': [
